@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+            div{
+                background-color: aquamarine;
+                height: 400px;
+                width: 400px;
+                margin-top: 2%;
+                margin-left: 2%;
+                padding: 2%;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: xx-large;
+            }
+            body{
+                background-color:#333;}
+            h1{
+                color: rgb(14, 32, 32);
+                background-color: pink;
+            }
+            #kk{
+			  width: 100px;
+			  height: 100px;
+                border-end-end-radius: 1000px;
+			  position:relative;
+			  animation-name:Demo;
+			  animation-duration:8s;
+			  animation-iteration-count:infinite;
+              border: 3PX solid ;
+              margin-left: 100px;
+            }
+            #xx{
+			  width: 100px;
+			  height: 100px;
+                border-end-end-radius: 1000px;
+			  position:relative;
+			  animation-name:Demo;
+			  animation-duration:8s;
+			  animation-iteration-count:infinite;
+              border: 3PX solid;
+              margin-left: 100px;
+            
+             
+			 }
+       #jj{
+			  width: 400px;
+			  height: 400px;
+                border-end-end-radius: 1    00px;
+			  position:relative;
+			  animation-name:Demo;
+			  animation-duration:8s;
+			  animation-iteration-count:infinite;
+              border: 5PX solid;
+              margin-left: 200px;
+            
+             
+			 }
+       #ll{
+			  width: 100px;
+			  height: 100px;
+                border-end-end-radius: 100px;
+			  position:relative;
+			  animation-name:Demo;
+			  animation-duration:8s;
+			  animation-iteration-count:infinite;
+              border: 5PX solid;
+            
+            
+             
+			 }
+	
+            @keyframes Demo{
+				0%{background-color:rgb(64, 255, 0); left:0px; top:0px;transform:rotate(0deg);}
+				25%{background-color:rgb(0, 187, 255); left:200px; top:0px;transform:rotate(90deg);}
+				50%{background-color:rgb(255, 0, 204); left:200px; top:200px;transform:rotate(180deg);}
+				75%{background-color:green; left:0px; top:200px;transform:rotate(270deg);}
+				100%{background-color:rgb(43, 0, 255); left:0px; top:0px;transform:rotate(360deg);}
+            
+			}
+
+
+
+
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+button {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	background: #333;
+	margin: 10px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+	color: #222;
+	font-size: 16px;
+}
+
+button:hover {
+	box-shadow: -5px -5px 15px rgb(130, 202, 232), 5px 5px 15px rgb(148, 207, 236), inset 5px 5px 10px rgb(134, 220, 238), inset -5px -5px 10px rgb(151, 220, 240);
+	font-size: 15px;
+	transition: 500ms;
+}
+
+button:focus {
+	outline: none;
+}
+
+.red:hover {
+	color: #f07171;
+	text-shadow: 0px 0px 10px #f07171;
+}
+
+.green:hover {
+		color: #93f071;
+	text-shadow: 0px 0px 10px #93f071;
+}
+
+.blue:hover {
+	color: #71b7f0;
+	text-shadow: 0px 0px 10px #71b7f0;
+}
+
+.purple:hover {
+	color: #b971f0;
+	text-shadow: 0px 0px 10px #b971f0;
+}
+
+            
+
+    </style>
+    <script  src="raj.js"></script>
+</head>
+<body> 
+  
+    <h1 align="center"><marquee behavior="" direction=""> <span class="text blue"> First Day Of Java Script.</span> </marquee></h1>
+    
+    <div id="jj"> <span class="text red"> Hyy I'm Rishabsingh.</span> </div>
+   
+     <hr> <center>
+      <button class="noselect red"> <input type="button" value="Inline Alert" onclick="alert('This Is Wrong Try Again Next Time ')"></button> <br><br>
+        <button class="noselect red"> <input type="button" value="Confirm Inline" onclick="confirm(' Are you Sure ? Please Check one Time More . ')"></button><br><br>
+          <button class="noselect red"><input type="button" value="Prompt Inline" onclick="alert(' Enter Your Full Name Here  ')"></button></center>
+    <hr> 
+    <button class="noselect red"><input type="button" value="Internal Alert" onclick=internalalert()> </button><br><br>
+    <button class="noselect red"><input  type="button" value="Internal confirm" onclick=internalconfirm()></button> <br><br>
+    <button class="noselect red"><input type="button" value="Internal Prompt" onclick=internalprompt()></button>
+    <hr>
+   <center> 
+       <button class="noselect red"> <input type="button" value="external Alert" onclick=externalalert()> </button> <br><br>
+    <button class="noselect red"><input type="button" value="external confirm" onclick=externalconfirm()></button><br><br>
+    <button class="noselect red"><input type="button" value="external Prompt" onclick=externalpromt()></button></center>
+    <hr>
+    <button class="noselect red"> <input type="button" value="color chang on body " onclick=changecolorbody() ></button> <br><br>
+    <button class="noselect red"><input type="button" value="color chang on body " onclick=promtcolor() ></button><br><br>
+    <hr> <center>    <button class="noselect red"> <input type="button" value="color chang on div " onclick=changecolordiv() ></button> <br><br>
+    <button class="noselect red"> <input type="button" value="color chang on div" onclick=promptcolordiv() > </button> </center>
+    <br><br>
+    <hr>
+   <center> <h1 align="center"> <span class="text green">Change Color For Background By Color Picker.</span> </h1>
+    <input type="color" id="R2" onchange=changecolor()>
+    <hr>
+    <h1 align="center"><span class="text red"> Change Color For Div By Color Picker.</span></h1>
+    <input type="color" id="R3" onchange=changecolordiv()></center>
+     
+</body>
+<script>
+            function internalalert(){
+                alert("Hello Guys I'm Rishabsingh.");
+            }
+
+
+            function internalconfirm(){
+                if(confirm("Are You Sure????"))
+                {
+                    alert("Yesssss");
+
+                }
+                else
+                {
+                    alert("Noooooo");
+                }
+            }
+
+            function internalprompt(){
+
+                var fname=prompt("Enter Your First Name Here");
+                var lname=prompt("Enter Your Last Name Here");
+                alert(fname +" "+ lname);
+            
+            }
+            function changecolorbody(){
+                document.body.style.backgroundColor="pink";
+            }
+            function promtcolor(){
+                document.body.style.backgroundColor=prompt("Enter color :-");
+            }
+            function changecolordiv(){
+                document.getElementById("R1").style.backgroundColor="pink";
+            }
+            function promptcolordiv(){
+                document.getElementById("jj").style.backgroundColor=prompt("Enter color :-");
+            }
+            function changecolor(){
+                document.body.style.backgroundColor=document.getElementById("jj").value;
+            }
+            function changecolordiv(){
+                document.getElementById("R1").style.backgroundColor=document.getElementById("jj").value;
+            }
+
+
+
+</script>
+</html>

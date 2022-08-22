@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+            div{
+                background-color: aquamarine;
+                height: 400px;
+                width: 400px;
+                margin-top: 2%;
+                margin-left: 2%;
+                padding: 2%;
+            }
+            body{
+                background-color: blueviolet;
+            }
+            h1{
+                color: azure;
+                background-color: pink;
+            }
+
+
+    </style>
+</head>
+<body>
+    <h1 align="center"><marquee behavior="" direction=""> First Day Of Java Script. </marquee></h1>
+    <div> Hyy I'm Rishabsingh. </div>
+    <hr>
+    <input type="button" value="Inline Alert" onclick="alert('This Is Wrong Try Again Next Time ')"> <br><br>
+    <input type="button" value="Confirm Inline" onclick="confirm(' Are you Sure ? Please Check one Time More . ')"><br><br>
+    <input type="button" value="Prompt Inline" onclick="alert(' Enter Your Full Name Here  ')">
+    <hr>
+    <input type="button" value="Internal Alert" onclick=internalalert()> <br><br>
+    <input type="button" value="Internal confirm" onclick=internalconfirm()> <br><br>
+    <input type="button" value="Internal Prompt" onclick=internalprompt()>
+    
+
+
+
+</body>
+<script>
+            function internalalert(){
+                alert("Hello Guys I'm Rishabsingh.");
+            }
+
+
+            function internalconfirm(){
+                if(confirm("Are You Sure????"))
+                {
+                    alert("Yesssss");
+
+                }
+                else
+                {
+                    alert("Noooooo");
+                }
+            }
+
+            function internalprompt(){
+
+                var fname=prompt("Enter Your First Name Here");
+                var lname=prompt("Enter Your Last Name Here");
+                alert(fname +" "+ lname);
+            
+            }
+
+
+
+</script>
+</html>
